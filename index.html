@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="game">
+        <div class="message" id="messageStart">
+            <h2>Flappy Bird</h2>
+            <p>Click to start</p>
+        </div>
         <div id="block"></div>
         <div id="hole"></div>
-        <div id="charater"></div>
+        <div id="character">
+            <img src="image.svg" alt="Bird Image">
+        </div>
+        <div class="message" id="messageEnd">
+            <h2>Game Over</h2>
+            <p>Click to restart</p>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
+
 </html>
