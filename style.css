@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto; /* center the game */
+    overflow: hidden; /* hide the block when it moves out of the game */
+}
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px; /* position the block to the right */
+    animation: block 2s infinite linear; /* move the block to the left */
+}
+@keyframes block {
+    0%{left: 400px;}
+    100%{left: -50px;} /* move the block to the left */
+}
